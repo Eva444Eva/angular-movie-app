@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-import { UsersService } from '../services/users.service';
-import { UserRegistration } from '../types/user-registration.type';
-import { User } from '../types/user.type';
+import { UsersService } from '../../services/users.service';
+import { UserRegistration } from '../../types/user-registration.type';
+import { User } from '../../types/user.type';
 
 @Component({
   selector: 'app-user-registration',
@@ -38,7 +38,7 @@ export class UserRegistrationComponent {
         this.snack.open(
           `Registration unsuccessful: ${err.message}`,
           'OK',
-          { duration: 2000 }
+          { duration: 5000 }
         );
       }
     });

@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 import { UsersService } from './services/users.service';
-import { UserRegistrationComponent } from './components/user-registration.component';
+import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
+import { LoginComponent } from './components/login/login.component';
 
 const DEV = true;
 
@@ -28,6 +29,10 @@ export class AppComponent implements OnInit {
   }
 
   public openUserRegistrationDialog() {
-    this.dialog.open(UserRegistrationComponent, { width: '280px' });
+    this.dialog.open(UserRegistrationComponent, { width: '300px' });
+  }
+
+  public openLoginDialog() {
+    this.dialog.open(LoginComponent, { width: '300px' });
   }
 }

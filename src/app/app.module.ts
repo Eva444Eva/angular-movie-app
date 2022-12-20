@@ -6,12 +6,14 @@ import { SharedModule } from './modules/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { UserRegistrationComponent } from './components/user-registration.component';
+import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserRegistrationComponent,
+    LoginComponent,
   ],
   imports: [
     AppRoutingModule,
