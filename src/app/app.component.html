@@ -1,7 +1,16 @@
-<div class="content" role="main">
+<div class="main-page">
   <h2>{{ title }}</h2>
 
-  <p id="api-status">movie API status: {{ status }}</p>
-</div>
+  <button mat-raised-button
+    (click)="openUserRegistrationDialog()"
+    style="margin-right: 10px;"
+    color="primary">
+    Sign Up
+  </button>
 
-<router-outlet></router-outlet>
+  <button mat-raised-button
+    (click)="openLoginDialog()"
+    color="primary">
+    Login
+  </button>
+</div>
